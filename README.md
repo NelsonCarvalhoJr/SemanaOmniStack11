@@ -23,3 +23,23 @@ Semana OmniStack 11 - Rocket Seat - Projeto "Be The Hero"
  * Listar casos específicos de uma ONG
  * Listar todos os casos
  * Entrar em contato com a ONG
+
+## Cofigurações
+
+Arquivo **./frontend/src/services/api.js**
+
+```javascript
+// Substituir <ip_backend> pelo endereço IP em que está executando o back-end
+const api = axios.create({
+	baseURL: '<ip_backend>',
+})
+```
+
+Arquivo **./mobile/src/services/api.js**
+
+```javascript
+// Substituir <ip_backend> pelo endereço IP em que está executando o back-end
+const api = axios.create({
+	baseURL: '<ip_backend>',
+})
+```
